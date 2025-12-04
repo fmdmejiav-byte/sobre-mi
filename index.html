@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fabián Durán – Portfolio personal" />
+  <title>Fabián Durán</title>
+  <style>
+    :root {
+      --accent: #3498db;
+      --bg-header: #f5f8fb;
+      --text-color: #333;
+      --text-muted: #666;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #ffffff; color: var(--text-color); line-height: 1.6; }
+    header { background: var(--bg-header); padding: 60px 20px; text-align: center; }
+    header h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; color: var(--text-muted); }
+    nav a { margin: 0 10px; color: var(--accent); text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    section { margin-bottom: 40px; }
+    h2 { font-size: 2rem; border-bottom: 2px solid var(--accent); padding-bottom: 6px; margin-bottom: 16px; color: var(--accent); }
+    ul { list-style: none; padding-left: 0; }
+    ul li { margin-bottom: 8px; }
+    .skills span { display: inline-block; background: var(--bg-header); color: var(--accent); padding: 6px 12px; border-radius: 20px; margin: 4px; font-size: 0.9rem; }
+    footer { text-align: center; padding: 20px 0; border-top: 1px solid #eee; color: var(--text-muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fabián Durán</h1>
+    <p>Desarrollador web & Creativo Digital</p>
+    <nav>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="sobre">
+      <h2>Sobre mí</h2>
+      <p>Hola, soy <strong>Fabián Durán</strong>. Soy un apasionado por la tecnología, el diseño y la creación de soluciones web. Me encanta aprender nuevas habilidades, enfrentar retos y trabajar en proyectos que unan creatividad y funcionalidad. Creo que el trabajo en equipo, la curiosidad y la mejora continua son la base para crecer profesionalmente.</p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <span>HTML5 & CSS3</span><span>JavaScript</span><span>Diseño UI/UX</span><span>Responsive Design</span><span>Git & GitHub</span>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos / Portfolio</h2>
+      <ul>
+        <li><a href="#" target="_blank">Proyecto 1 — breve descripción</a></li>
+        <li><a href="#" target="_blank">Proyecto 2 — breve descripción</a></li>
+        <!-- Añade más proyectos si tienes -->
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:tucorreo@ejemplo.com">fmdmejiav@gmail.com/a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/usuario" target="_blank">/in/usuario</a></p>
+      <!-- Puedes añadir más redes o formulario -->
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Fabián Durán — Hecho con ❤️
+  </footer>
+
+  <script> document.getElementById('year').textContent = new Date().getFullYear(); </script>
+
+</body>
+</html>
